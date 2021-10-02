@@ -1,7 +1,7 @@
 # Личный проект «YetiCave»
 
-* Студент: [Greg Zingerenko](https://up.htmlacademy.ru/php/12/user/1882541).
-* Наставник: `Неизвестно`.
+- Студент: [Greg Zingerenko](https://up.htmlacademy.ru/php/12/user/1882541).
+- Наставник: `Владислав Зайко`.
 
 ---
 
