@@ -28,10 +28,15 @@
                                                  <span class="lot__amount"><?=convert_price($value['price']); ?></span>
                                                  <span class="lot__cost">цена<b class="rub">р</b></span>
                                              </div>
-                                             <div class="lot__timer timer">
-                                                 12:23
+                                             <?php
+                                                $h_left = get_time_range($value['date'])[0];
+                                                $m_left = get_time_range($value['date'])[1];
+                                                $div_class = "lot__timer timer";
+                                                 if (intval($h_left)<1) { $div_class = "lot__timer timer timer--finishing"; }
+                                                ?>
+                                             <div class="<?=$div_class; ?>">
+                                                 <?=$h_left ." : " . $m_left; ?>
                                              </div>
-                                         </div>
                                      </div>
                                  </li>
                              <?php endforeach; ?>
